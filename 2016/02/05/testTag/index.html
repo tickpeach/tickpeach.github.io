@@ -16,16 +16,19 @@
     
     
 
-    <meta name="description" content="testTag">
+    <meta name="description" content="testTag
+$$E=mc^2$$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="testTag | Tick Peach's Blog">
 <meta property="og:url" content="http://yoursite.com/2016/02/05/testTag/index.html">
 <meta property="og:site_name" content="Tick Peach's Blog">
-<meta property="og:description" content="testTag">
-<meta property="og:updated_time" content="2016-02-04T18:45:56.000Z">
+<meta property="og:description" content="testTag
+$$E=mc^2$$">
+<meta property="og:updated_time" content="2016-02-04T18:53:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="testTag | Tick Peach's Blog">
-<meta name="twitter:description" content="testTag">
+<meta name="twitter:description" content="testTag
+$$E=mc^2$$">
     
     
     
@@ -184,6 +187,7 @@ classes that you can use:
 
   <section id="post-content" class="article-content post">
     <p>testTag</p>
+<p>$$E=mc^2$$</p>
 
   </section>
 
@@ -243,5 +247,35 @@ classes that you can use:
   <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
 <![endif]-->
 
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </body>
 </html>
